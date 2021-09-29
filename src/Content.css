@@ -6,7 +6,7 @@ h3 {
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
   display: block;
-  font-size: 1.17em;
+  font-size: 2.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -26,7 +26,7 @@ p {
   margin-left: 1rem;
   /* margin-bottom: 4rem; */
 }
-.tag p{
+.tag > p{
   font-size: 1.3rem;
   letter-spacing: 0.14em;
   font-weight: 700;
