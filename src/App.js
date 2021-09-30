@@ -152,11 +152,13 @@ function App() {
                             <img src={Node} alt="skill" />
                           </div>
                           <div className="skills-item">
+                            <div style={{backgroundColor: '#FFFFFF', borderRadius: "100%"}}>
                             <img
                               style={{ color: "white" }}
                               src={Express}
                               alt="skill"
                             />
+                            </div>
                           </div>
                         </div>
                       }
