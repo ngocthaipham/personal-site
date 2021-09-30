@@ -2,12 +2,22 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Avatar from "./asserts/person.png";
+import Javascript from "./asserts/js.png";
+import ReactJs from "./asserts/reactjs.png";
+import Node from "./asserts/nodejs.png";
+import Express from "./asserts/expressjs.png";
+import Facebook from "./asserts/facebook.png";
+import Instagram from "./asserts/instagram.png";
+import Github from "./asserts/github.png";
+import Gmail from "./asserts/gmail.png";
 import Content from "./Content";
 import "./App.css";
 
 function App() {
-  AOS.init({ duration: 2000 });
-  // AOS.refresh();
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+    // AOS.refresh();
+  }, []);
   return (
     <>
       <body>
@@ -20,7 +30,7 @@ function App() {
               <div className="inner-right-item">
                 <div className="content-container">
                   <div
-                    className="section first-section"
+                    className="first-section"
                     style={{ paddingBottom: "2rem" }}
                   >
                     <div className="container">
@@ -80,24 +90,130 @@ function App() {
                           <div className="resume">
                             <div className="resume-item">
                               <p className="small">
-                                Internship :<span style={{marginLeft: "10px"}}>2021-Now</span>
+                                Internship :
+                                <span style={{ marginLeft: "10px" }}>
+                                  2021-Now
+                                </span>
                               </p>
-                              <p style={{color: "white"}}>Intership</p>
-                              <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                              <p style={{ color: "white" }}>Intership</p>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry.
+                              </p>
                             </div>
                             <div className="resume-item">
-                            <p className="small">
-                                Self study :<span style={{marginLeft: "10px"}}>2020-2021</span>
+                              <p className="small">
+                                Self study :
+                                <span style={{ marginLeft: "10px" }}>
+                                  2020-2021
+                                </span>
                               </p>
                               {/* <p style={{color: "white"}}>Student</p> */}
-                              <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry.
+                              </p>
                             </div>
                             <div className="resume-item">
-                            <p className="small">
-                                Nong Lam University :<span style={{marginLeft: "10px"}}>2017-2020</span>
+                              <p className="small">
+                                Nong Lam University :
+                                <span style={{ marginLeft: "10px" }}>
+                                  2017-2020
+                                </span>
                               </p>
-                              <p style={{color: "white"}}>Student</p>
-                              <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                              <p style={{ color: "white" }}>Student</p>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      }
+                    />
+                  </div>
+                  <div
+                    // data-aos="fade-right"
+                    className="section"
+                  >
+                    <Content
+                      tag={"SKILLS"}
+                      description="Skills I have collected
+                      over the years and days."
+                      content={
+                        <div className="skills-flex">
+                          <div className="skills-item">
+                            <img src={Javascript} alt="skill" />
+                          </div>
+                          <div className="skills-item">
+                            <img src={ReactJs} alt="skill" />
+                          </div>
+                          <div className="skills-item">
+                            <img src={Node} alt="skill" />
+                          </div>
+                          <div className="skills-item">
+                            <img
+                              style={{ color: "white" }}
+                              src={Express}
+                              alt="skill"
+                            />
+                          </div>
+                        </div>
+                      }
+                    />
+                  </div>
+                  <div
+                    // data-aos="fade-right"
+                    className="section"
+                  >
+                    <Content
+                      tag={"CONTACT"}
+                      description="Let's get in touch."
+                      content={
+                        <div className="contact-flex">
+                          {/* <p>Fill out my form below and send me an email.</p> */}
+                          <div className="contact-item">
+                            <img src={Gmail} alt="contact" />
+                            <div>
+                              <a
+                                className="link"
+                                // href="blank"
+                              >
+                                ngocthaipham99@gmail.com
+                              </a>
+                            </div>
+                          </div>
+                          <div className="contact-item">
+                            <img src={Github} alt="contact" />
+                            <div>
+                              <a
+                                className="link"
+                                href="https://github.com/ngocthaipham"
+                              >
+                                Ngoc Thai Pham
+                              </a>
+                            </div>
+                          </div>
+                          <div className="contact-item">
+                            <img src={Facebook} alt="contact" />
+                            <div>
+                              <a
+                                className="link"
+                                href="https://www.facebook.com/marbiosgod/"
+                              >
+                                Ngoc Thai
+                              </a>
+                            </div>
+                          </div>
+                          <div className="contact-item">
+                            <img src={Instagram} alt="contact" />
+                            <div>
+                              <a
+                                className="link"
+                                href="https://www.instagram.com/pnthaiiii_/"
+                              >
+                                pnthaiiii_
+                              </a>
                             </div>
                           </div>
                         </div>

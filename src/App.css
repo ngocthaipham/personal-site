@@ -29,7 +29,7 @@ h1 {
   left: 0;
   height: 100vh;
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(36, 34, 34);
 }
 
 .flex-container {
@@ -57,7 +57,7 @@ h1 {
   position: fixed;
   overflow: auto;
 }
-.flex-item-right > .inner-right-item {
+.flex-item-right .inner-right-item {
   position: relative;
   width: 50%;
   left: 50%;
@@ -68,7 +68,7 @@ h1 {
 }
 .content-container {
   position: relative;
-  max-width: 70rem;
+  max-width: 50rem;
 }
 .content-container .first-section {
   display: flex;
@@ -76,12 +76,12 @@ h1 {
   margin-top: 300px;
   margin-bottom: 100px;
 }
-.content-container > .section {
+.content-container .section {
   position: relative;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
-.content-container > .section > .container {
+.content-container .section .container {
   display: block;
   width: 100%;
 }
@@ -140,4 +140,36 @@ p.small {
   letter-spacing: 0;
   font-weight: 400;
   color: #fff;
+}
+
+
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills-item {
+  width: 25%;
+  text-align: center;
+}
+
+
+
+.contact-flex {
+  display: flex;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  padding: 10px 0px;
+  width: 50%;
+  display: flex;
+}
+
+.contact-flex .contact-item div a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
 }
