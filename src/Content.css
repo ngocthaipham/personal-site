@@ -21,12 +21,14 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.tag {
 
+}
 .description {
   margin-left: 1rem;
   /* margin-bottom: 4rem; */
 }
-.tag > p{
+.tag  p{
   font-size: 1.3rem;
   letter-spacing: 0.14em;
   font-weight: 700;
@@ -39,7 +41,7 @@ p {
     letter-spacing: -.005em;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     color: #7c7c7c;
     font-family: 'Source Sans Pro',sans-serif;
 }
@@ -47,4 +49,5 @@ p {
     width: 4rem;
     height: .1rem;
     background: #fff;
+    margin: 20px 0px;
 }

@@ -44,8 +44,8 @@ function App() {
                     className="section"
                   >
                     <Content
-                      tag={"ABOUT"}
-                      description="My approach to building"
+                      tag={<p>ABOUT</p>}
+                      description={<p>My approach to building</p>}
                       content={
                         <p>
                           "Lorem Ipsum is simply dummy text of the printing and
@@ -64,8 +64,8 @@ function App() {
                     className="section"
                   >
                     <Content
-                      tag={"SERVICE"}
-                      description="What I can do"
+                      tag={<p>SERVICE</p>}
+                      description={<p>What I can do</p>}
                       content={
                         <p>
                           Lorem ipsum dolor sit amet, consectetur. adipiscing
@@ -79,8 +79,8 @@ function App() {
                     className="section"
                   >
                     <Content
-                      tag={"RESUME"}
-                      description="Experience"
+                      tag={<p>RESUME</p>}
+                      description={<p>Experience</p>}
                       content={
                         <div>
                           <p>
@@ -95,7 +95,7 @@ function App() {
                                   2021-Now
                                 </span>
                               </p>
-                              <p style={{ color: "white" }}>Intership</p>
+                              <p style={{ color: "white" }}>Internship</p>
                               <p>
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry.
@@ -137,9 +137,9 @@ function App() {
                     className="section"
                   >
                     <Content
-                      tag={"SKILLS"}
-                      description="Skills I have collected
-                      over the years and days."
+                      tag={<p>SKILLS</p>}
+                      description={<p>Skills I have collected
+                      over the years and days.</p>}
                       content={
                         <div className="skills-flex">
                           <div className="skills-item">
@@ -169,8 +169,8 @@ function App() {
                     className="section"
                   >
                     <Content
-                      tag={"CONTACT"}
-                      description="Let's get in touch."
+                      tag={<p>CONTACT</p>}
+                      description={<p>Let's get in touch.</p>}
                       content={
                         <div className="contact-flex">
                           {/* <p>Fill out my form below and send me an email.</p> */}

@@ -104,6 +104,7 @@ h1 {
   padding: 8rem 5rem;
   background: #181818;
   margin-bottom: 6rem;
+  border-radius: 10px;
 }
 .resume .resume-item:before {
   content: "";
