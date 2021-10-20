@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import bg from "./asserts/bg-effects.png";
@@ -10,20 +10,18 @@ import Content from "./Content";
 import Hero from "./Hero";
 import { Proficient } from "./SkillData";
 import "./App.css";
+import "./responsive.css";
 
 AOS.init({ duration: 2000 });
 function App() {
-  // useEffect(() => {
-  // AOS.refresh();
-  // }, []);
   return (
     <>
       <body>
         <div id="main">
           <div className="flex-container">
             <div className="flex-item flex-item-left avatar">
-              <div className="bg">
-                <img src={bg} alt="bg" />
+              <div className="bg-container">
+                <img className="bg" src={bg} alt="bg" />
               </div>
               <div className="hero">
                 <Hero />
@@ -66,20 +64,6 @@ function App() {
                       }
                     />
                   </div>
-                  {/* <div 
-                  // data-aos="fade-right"
-                   className="section">
-                    <Content
-                      tag={<p>SERVICE</p>}
-                      description={<p>What I can do</p>}
-                      content={
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur. adipiscing
-                          elit. Aenean et elementum purus.
-                        </p>
-                      }
-                    />
-                  </div> */}
                   <div
                     // data-aos="fade-right"
                     className="section"
@@ -91,9 +75,15 @@ function App() {
                         <div>
                           <div className="resume">
                             <div className="resume-item">
-                              <p style={{ color: "white" }}>
+                              <p
+                                className="resume-job-name"
+                                style={{ color: "white" }}
+                              >
                                 Easy English :
-                                <span style={{ marginLeft: "10px" }}>
+                                <span
+                                  className="resume-job-name"
+                                  style={{ marginLeft: "10px" }}
+                                >
                                   {`May, 2021 - Present`}
                                 </span>
                               </p>
@@ -108,7 +98,7 @@ function App() {
                               </p>
                               <p style={{ color: "white" }}>
                                 Project :{" "}
-                                <a href="https://https://deploy-easy-english.herokuapp.com/">
+                                <a href="https://deploy-easy-english.herokuapp.com/">
                                   Easy English
                                 </a>{" "}
                               </p>
@@ -131,9 +121,15 @@ function App() {
                               </ul>
                             </div>
                             <div className="resume-item">
-                              <p style={{ color: "white" }}>
+                              <p
+                                className="resume-job-name"
+                                style={{ color: "white" }}
+                              >
                                 ToeicX :
-                                <span style={{ marginLeft: "10px" }}>
+                                <span
+                                  className="resume-job-name"
+                                  style={{ marginLeft: "10px" }}
+                                >
                                   {`Jul, 2020 - Present`}
                                 </span>
                               </p>
@@ -185,9 +181,15 @@ function App() {
                               </ul>
                             </div>
                             <div className="resume-item">
-                              <p style={{ color: "white" }}>
+                              <p
+                                className="resume-job-name"
+                                style={{ color: "white" }}
+                              >
                                 Xang dau Vuong Sau :
-                                <span style={{ marginLeft: "10px" }}>
+                                <span
+                                  className="resume-job-name"
+                                  style={{ marginLeft: "10px" }}
+                                >
                                   {`Jun, 2019 - Jul, 2020`}
                                 </span>
                               </p>
@@ -257,7 +259,7 @@ function App() {
                               </ul>
                             </div>
                             <div className="resume-item">
-                              <p style={{ color: "white" }}>
+                              <p className="resume-job-name" style={{ color: "white" }}>
                                 Nong Lam University : Aug, 2017 - Jul, 2019
                                 {/* <span style={{ marginLeft: "10px" }}>
                                   {`Aug, 2017 - Jul, 2019`}
@@ -306,7 +308,7 @@ function App() {
                   </div>
                   <div
                     // data-aos="fade-right"
-                    className="section"
+                    className="section last-section"
                   >
                     <Content
                       tag={<p>CONTACT ME</p>}
@@ -360,7 +362,7 @@ function App() {
                           </div>
 
                           <div className="md:mx-6 flex flex-wrap md:flex-row justify-between flex-contact">
-                            <div className="md:w-6/12 md:px-0 p-5 my-5 flex-contact-item">
+                            <div className="md:w-6/12 md:px-0 p-5 my-5 flex-contact-item flex-contact-left">
                               <div>
                                 <p className="font-bold">Pham Ngoc Thai</p>
                                 {/* <p className='font-thin'>HCM</p> */}
@@ -418,38 +420,37 @@ function App() {
                                     </span>
                                   </a>
                                 </div>
-
-                                <a
-                                  href={`https://www.instagram.com/pnthaiiii_/`}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
-                                    <img
-                                      src={Instagram}
-                                      alt=""
-                                      width="24px"
-                                      height="24px"
-                                      className="mr-1"
-                                    />
-                                    Instagram
-                                  </span>
-                                </a>
+                                <div className="mr-4">
+                                  <a
+                                    href={`https://www.instagram.com/pnthaiiii_/`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
+                                      <img
+                                        src={Instagram}
+                                        alt=""
+                                        width="24px"
+                                        height="24px"
+                                        className="mr-1"
+                                      />
+                                      Instagram
+                                    </span>
+                                  </a>
+                                </div>
                               </div>
                             </div>
                             <div
-                              className="relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm flex-contact-item"
+                              className="relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm flex-contact-item flex-contact-right"
                               onClick={() => window.scroll(0, 0)}
                             >
-                              <picture>
-                                <source srcSet={rocket} type="image/png" />
-                                <img
-                                  width="500px"
-                                  height="500px"
-                                  loading="lazy"
-                                  alt="red rocket flying"
-                                />
-                              </picture>
+                              {/* <source srcSet={rocket} type="image/png" /> */}
+                              <img
+                                className="rocket"
+                                src={rocket}
+                                loading="lazy"
+                                alt="red rocket flying"
+                              />
                             </div>
                           </div>
                         </div>

@@ -1,0 +1,392 @@
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  h1 {
+    display: block;
+    font-size: 1.75em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .hero-container {
+    height: 460px;
+  }
+
+  .bg-container {
+    position: absolute;
+    right: -100px;
+    top: 0;
+  }
+  .bg {
+      height: 800px;
+      width: 800px;
+  }
+
+  .content p {
+    font-size: 1.7rem;
+    line-height: 1.2em;
+    letter-spacing: -.005em;
+    font-weight: 290;
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #7c7c7c;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+.content-container .section {
+    margin-bottom: 250px;
+  }
+
+.tag  p{
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    font-weight: 650;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  ul li {
+    margin-left: 40px;
+  }
+  
+  .resume .resume-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 5rem;
+    position: relative;
+    padding: 6rem 4rem;
+    background: #181818;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+  }
+
+  .flex-contact {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .flex-contact-item {
+    width: 50%;
+  }
+  .rocket {
+    width: 100%;
+    height: 100%;
+  }
+  .mt-7 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .mr-4 {
+      width: 50%;
+  }
+  
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.4em;
+        margin-block-end: 0.4em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      .hero-container {
+        height: 360px;
+      }
+    
+      .bg-container {
+        position: absolute;
+        right: -90px;
+        top: 50px;
+      }
+      .bg {
+          height: 650px;
+          width: 650px;
+      }
+    
+      h3 {
+        letter-spacing: -0.005em;
+        line-height: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 250;
+        font-family: "Source Sans Pro", sans-serif;
+        display: block;
+        font-size: 1.8em;
+        margin-block-start: 0.8em;
+        margin-block-end: 0.8em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        /* font-weight: bold; */
+      }
+      .content p {
+        font-size: 1.4rem;
+        line-height: 1.0em;
+        letter-spacing: -.005em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #7c7c7c;
+        font-family: 'Source Sans Pro',sans-serif;
+    }
+    
+    p.resume-job-name {
+        font-size: 1.6em;
+    }
+    .content-container .section {
+        margin-bottom: 200px;
+      }
+    .tag  p{
+        font-size: 1.0rem;
+        letter-spacing: 0.12em;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 1.6rem;
+      }
+      ul li {
+        margin-left: 30px;
+      }
+      
+      .resume .resume-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 5rem;
+        position: relative;
+        padding: 5rem 3.5rem;
+        background: #181818;
+        margin-bottom: 5rem;
+        border-radius: 10px;
+      }
+    
+      .flex-contact {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+      }
+      
+      .flex-contact-item {
+        width: 100%;
+      }
+      .rocket {
+        width: 100%;
+        height: 100%;
+      }
+      .mt-7 {
+          display: flex;
+          align-items: center;
+      }
+      .mr-4 {
+          width: 100%;
+      }
+
+      .items-center {
+        width: 25%;
+        text-align: center;
+        margin: 10px 0px;
+        align-items: center;
+        /* display: flex; */
+      }
+      
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    h1 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.4em;
+        margin-block-end: 0.4em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+
+      #main {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(36, 34, 34);
+        overflow: auto;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0px 10px;
+      }
+      
+      .flex-item {
+        /* width: 100%; */
+      
+      }
+      .flex-item-left {
+        /* position: relative; */
+        /* height: 100%; */
+        /* display: flex; */
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        perspective: 38rem;
+        z-index: 2;
+      }
+      
+      
+      .flex-item-right {
+        inset: 0px;
+        /* width: 100%; */
+        height: 100%;
+        /* position: fixed; */
+        /* overflow: auto; */
+      }
+      .flex-item-right .inner-right-item {
+        /* position: relative; */
+        width: 100%;
+      }
+      .inner-right-item {
+        overflow: auto;
+        transform: translate(0px, 0px);
+      }
+      .content-container {
+        position: relative;
+        max-width: 50rem;
+      }
+      .content-container .first-section {
+        display: flex;
+        align-items: center;
+        margin-top: 300px;
+        margin-bottom: 100px;
+      }
+      .content-container .section {
+        position: relative;
+        width: 100%;
+        margin-bottom: 300px;
+      }
+      .content-container .section .container {
+        display: block;
+        width: 100%;
+      }
+
+      .hero-container {
+        height: 200px;
+      }
+    
+      .bg-container {
+        position: absolute;
+        right: -50px;
+        top: 50px;
+      }
+      .bg {
+          height: 500px;
+          width: 500px;
+      }
+    
+      h3 {
+        letter-spacing: -0.005em;
+        line-height: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 250;
+        font-family: "Source Sans Pro", sans-serif;
+        display: block;
+        font-size: 1.8em;
+        margin-block-start: 0.8em;
+        margin-block-end: 0.8em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        /* font-weight: bold; */
+      }
+      .content p {
+        font-size: 1.4rem;
+        line-height: 1.0em;
+        letter-spacing: -.005em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #7c7c7c;
+        font-family: 'Source Sans Pro',sans-serif;
+    }
+    
+    p.resume-job-name {
+        font-size: 1.6em;
+    }
+    .content-container .section {
+        margin-bottom: 200px;
+      }
+    .tag  p{
+        font-size: 1.0rem;
+        letter-spacing: 0.12em;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 1.6rem;
+      }
+      ul li {
+        margin-left: 30px;
+      }
+      
+      .resume .resume-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 5rem;
+        position: relative;
+        padding: 5rem 3.5rem;
+        background: #181818;
+        margin-bottom: 5rem;
+        border-radius: 10px;
+      }
+    
+      .flex-contact {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+      }
+      
+      .flex-contact-item {
+        width: 100%;
+      }
+      .rocket {
+        width: 100%;
+        height: 100%;
+      }
+      .mt-7 {
+          display: flex;
+          align-items: center;
+      }
+      .mr-4 {
+          width: 100%;
+      }
+
+      .items-center {
+        width: 25%;
+        text-align: center;
+        margin: 10px 0px;
+        align-items: center;
+        /* display: flex; */
+      }
+      
+
+}

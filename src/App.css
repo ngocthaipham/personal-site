@@ -5,14 +5,9 @@
   box-sizing: border-box;
 }
 *, :after, :before {
-  /* box-sizing: border-box; */
   border: 0 solid #e5e7eb;
 }
 body {
-  /* font-size: 1.4rem;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  color: #fff; */
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -24,6 +19,7 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   text-rendering: optimizelegibility;
+  
 }
 div {
   display: block;
@@ -38,13 +34,6 @@ input {
   height: 40px;
 }
 
-.gradient:focus {
-  border: 1px solid transparent;
-  background-image: linear-gradient(#141414, #141414), linear-gradient(43deg, #a162e8 0%, #f7ce68 46%, #85ffbd 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
 input,
 textarea {
   background: #121212c5;
@@ -55,16 +44,25 @@ textarea {
 *:focus:not(.focus-visible) {
   outline: none;
 }
-
 h1 {
   display: block;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
 }
+/* @media only screen and (max-width: 1920px) {     */
+
+
+.gradient:focus {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#141414, #141414), linear-gradient(43deg, #a162e8 0%, #f7ce68 46%, #85ffbd 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
 
 #main {
   position: fixed;
@@ -79,9 +77,12 @@ h1 {
 .flex-container {
   display: flex;
   flex-direction: column;
+
 }
+
 .flex-item {
   width: 50%;
+
 }
 .flex-item-left {
   position: relative;
@@ -95,7 +96,7 @@ h1 {
   z-index: 2;
 }
 
-.bg {
+.bg-container {
   position: absolute;
   right: 0;
   top: 0;
@@ -107,6 +108,7 @@ h1 {
   width: 600px;
   z-index: 1;
   top: 150px;
+
 }
 
 .flex-item-right {
@@ -194,14 +196,6 @@ h1 {
   height: 40px;
   background: #fff;
 }
-p.small {
-  font-size: 1.1rem;
-  line-height: 1.48em;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #fff;
-}
-
 
 
 .content-center {
@@ -367,7 +361,12 @@ button, input, optgroup, select, textarea {
 .flex-contact-item {
   width: 50%;
 }
+.rocket {
+  width: 100%;
+  height: 100%;
+}
 
 ul li {
-  margin-left:50px;
+  margin-left: 50px;
 }
+
