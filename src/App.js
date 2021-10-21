@@ -21,10 +21,10 @@ function App() {
           <div className="flex-container">
             <div className="flex-item flex-item-left avatar">
               <div className="bg-container">
-                <img className="bg" src={bg} alt="bg" />
-              </div>
-              <div className="hero">
-                <Hero />
+                <div className="box">
+                  <Hero className="hero" />
+                  <div className="bg"></div>
+                </div>
               </div>
             </div>
             <div className="flex-item flex-item-right">
@@ -259,7 +259,10 @@ function App() {
                               </ul>
                             </div>
                             <div className="resume-item">
-                              <p className="resume-job-name" style={{ color: "white" }}>
+                              <p
+                                className="resume-job-name"
+                                style={{ color: "white" }}
+                              >
                                 Nong Lam University : Aug, 2017 - Jul, 2019
                                 {/* <span style={{ marginLeft: "10px" }}>
                                   {`Aug, 2017 - Jul, 2019`}
@@ -296,7 +299,7 @@ function App() {
                                     key={index}
                                   >
                                     {x.logo}
-                                    {x.skill}
+                                    <div className="skill">{x.skill}</div>
                                   </div>
                                 ))}
                               </div>
@@ -375,7 +378,7 @@ function App() {
                               </div>
                               <a
                                 className="border-b-2 mt-3 inline-block border-gray-500"
-                                href="#"
+                                href="https://drive.google.com/file/d/1qU4BGWGYyluCwPevNyCz7f1I7xEnLmKk/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                               >
