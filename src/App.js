@@ -378,7 +378,7 @@ function App() {
                               </div>
                               <a
                                 className="border-b-2 mt-3 inline-block border-gray-500"
-                                href="https://drive.google.com/file/d/1qU4BGWGYyluCwPevNyCz7f1I7xEnLmKk/view?usp=sharing"
+                                href="https://drive.google.com/file/d/10UiIv0XCqStCoWoXTU3PRQnPj0aqZ7p2/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                               >
