@@ -13,6 +13,75 @@
     font-size:4rem;
   }
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  
+  .my-16 {
+    position: absolute;
+    width: 60rem;
+    margin-left: 25rem;
+  }
+  .left-content {
+    width: 100%;
+    height: 70rem;
+    margin-top: 10rem;
+  }
+  .left-content .inner-content {
+    position: absolute;
+    width: 100%;
+    height: 70rem;
+
+  }
+  .left-content .inner-content .picture-box {
+    position: absolute;
+    height: 70rem;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+  }
+  .left-content .inner-content .picture {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 70rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .right-content {
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+  }
+  .right-content .inner-content {
+    padding-top: 20vh;
+    position: relative;
+    width: 80%;
+    left: 10%;
+  }
+  .section-container {
+    position: relative;
+    max-width: 90rem;
+  }
+  .section-container .section.height-100 {
+    min-height: 100vh;
+    
+}
+.section-container .section {
+  padding-bottom: 7rem;
+}
+ul li {
+  margin-left: 2.5rem;
+}
+
+}
+
 @media (max-width: 500px) {
   html {
     font-size: 6px;
