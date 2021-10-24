@@ -13,134 +13,116 @@ import css3 from "./asserts/css3-original.svg";
 const Proficient = [
   {
     skill: "Javascript",
+    logo: <img src={js} alt="" loading="lazy" className="w-16 mb-1" />,
+  },
+  {
+    skill: "React Js",
     logo: (
       <img
-        src={js}
+        src={react}
         alt=""
         loading="lazy"
         className="w-16 mb-1"
-        width="64px"
-        height="64px"
+        
       />
     ),
   },
   {
-    skill: "React Js",
-    logo:  (
-        <img
-          src={react}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
-  },
-  {
     skill: "Node JS ",
-    logo:  (
-        <img
-          src={nodejs}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={nodejs}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "MongoDB",
-    logo:  (
-        <img
-          src={mongodb}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={mongodb}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "Git",
-    logo:  (
-        <img
-          src={git}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={git}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
 
   {
     skill: "SocketIO",
-    logo:  (
-        <img
-          src={socketio}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={socketio}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "MySql",
-    logo:  (
-        <img
-          src={mysql}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={mysql}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "Redis",
-    logo:  (
-        <img
-          src={redis}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={redis}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "HTML 5",
-    logo:  (
-        <img
-          src={html5}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={html5}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
   {
     skill: "CSS 3",
-    logo:  (
-        <img
-          src={css3}
-          alt=""
-          loading="lazy"
-          className="w-16 mb-1"
-          width="64px"
-          height="64px"
-        />
-      ),
+    logo: (
+      <img
+        src={css3}
+        alt=""
+        loading="lazy"
+        className="w-16 mb-1"
+        
+      />
+    ),
   },
 ];
 

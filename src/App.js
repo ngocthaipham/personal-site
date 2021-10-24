@@ -5,12 +5,13 @@ import bg from "./asserts/bg-effects.png";
 import Facebook from "./asserts/fb.png";
 import Instagram from "./asserts/ig.png";
 import Github from "./asserts/github.svg";
+import Download from "./asserts/download.png";
 import rocket from "./asserts/rocket.png";
 import Content from "./Content";
 import Hero from "./Hero";
 import { Proficient } from "./SkillData";
 import "./App.css";
-import "./responsive.css";
+// import "./responsive.css";
 
 AOS.init({ duration: 2000 });
 function App() {
@@ -18,40 +19,42 @@ function App() {
     <>
       <body>
         <div id="main">
-          <div className="flex-container">
-            <div className="flex-item flex-item-left avatar">
-              <div className="bg-container">
-                <div className="box">
+            <div className="left-content">
+              <div className="inner-content">
+                <div className="picture-box">
+                  {/* <div className="picture"> */}
+                  <div className="picture">
                   <Hero className="hero" />
-                  <div className="bg"></div>
+                  </div>
+                  {/* </div> */}
                 </div>
               </div>
             </div>
-            <div className="flex-item flex-item-right">
-              <div className="inner-right-item">
-                <div className="content-container">
-                  <div
-                    className="first-section"
-                    style={{ paddingBottom: "2rem" }}
-                  >
-                    <div className="container">
-                      <p>INTRODUCTION</p>
+            <div className="right-content"> 
+              <div className="inner-content">
+                <div className="section-container">
+                    <div className="section height-100 y-center" style={{marginBottom: "2rem"}}>
+                      <div className="container">
+                      <div className="tag">
+                        <p>INTRODUCTION</p>
+                      </div>
                       <h1 className="text-5xl font-bold md:text-7xl">
                         Hello. I’m {`Pham Ngoc Thai`}
                       </h1>
                       <p className="tracking-wide leading-relaxed">
                         {`A Full-Stack Web Developer & Open Source Contributor. I like to build things for web and solving problems.`}{" "}
                       </p>
+                      </div>
                     </div>
-                  </div>
 
                   <div
                     // data-aos="fade-up"
                     className="section"
+                    style={{marginBottom: "20rem"}}
                   >
                     <Content
-                      tag={<p>ABOUT</p>}
-                      description={<p>Sumary</p>}
+                      tag={"ABOUT"}
+                      description={"Sumary"}
                       content={
                         <p>
                           I’m an aspiring full-stack web developer with more
@@ -67,16 +70,17 @@ function App() {
                   <div
                     // data-aos="fade-right"
                     className="section"
+                    style={{marginBottom: "20rem"}}
                   >
                     <Content
-                      tag={<p>RESUME</p>}
-                      description={<p>Experience</p>}
+                      tag={"RESUME"}
+                      description={"Experience"}
                       content={
                         <div>
                           <div className="resume">
-                            <div className="resume-item">
+                            <div className="resume-item m-b-6">
                               <p
-                                className="resume-job-name"
+                                className="small m-b-1-5"
                                 style={{ color: "white" }}
                               >
                                 Easy English :
@@ -96,7 +100,7 @@ function App() {
                                 share vocabulary optimized for different
                                 purposes such as Toeic, IELTS...
                               </p>
-                              <p style={{ color: "white" }}>
+                              <p className="small" style={{ color: "white" }}>
                                 Project :{" "}
                                 <a href="https://deploy-easy-english.herokuapp.com/">
                                   Easy English
@@ -120,9 +124,9 @@ function App() {
                                 </li>
                               </ul>
                             </div>
-                            <div className="resume-item">
+                            <div className="resume-item m-b-6">
                               <p
-                                className="resume-job-name"
+                                className="small m-b-1-5"
                                 style={{ color: "white" }}
                               >
                                 ToeicX :
@@ -139,7 +143,7 @@ function App() {
                                 grammar, and practice tests to help Toeic exam
                                 preparation easier and get the best results.
                               </p>
-                              <p style={{ color: "white" }}>
+                              <p className="small" style={{ color: "white" }}>
                                 Project :{" "}
                                 <a href="https://toeicx.com/">ToeicX</a>{" "}
                               </p>
@@ -180,12 +184,12 @@ function App() {
                                 </li>
                               </ul>
                             </div>
-                            <div className="resume-item">
+                            <div className="resume-item m-b-6">
                               <p
-                                className="resume-job-name"
+                                className="small m-b-1-5"
                                 style={{ color: "white" }}
                               >
-                                Xang dau Vuong Sau :
+                                Vuong Sau Petro :
                                 <span
                                   className="resume-job-name"
                                   style={{ marginLeft: "10px" }}
@@ -197,7 +201,7 @@ function App() {
                                 A company in the gas stations, petrol stations
                                 with 2 large branches in Quang Ngai province.
                               </p>
-                              <p style={{ color: "white" }}>
+                              <p className="small" style={{ color: "white" }}>
                                 Project : The internal system{" "}
                               </p>
                               <ul>
@@ -258,9 +262,9 @@ function App() {
                                 </li>
                               </ul>
                             </div>
-                            <div className="resume-item">
+                            <div className="resume-item m-b-6">
                               <p
-                                className="resume-job-name"
+                                className="small m-b-1-5"
                                 style={{ color: "white" }}
                               >
                                 Nong Lam University : Aug, 2017 - Jul, 2019
@@ -278,17 +282,16 @@ function App() {
                   <div
                     // data-aos="fade-right"
                     className="section"
+                    style={{marginBottom: "20rem"}}
                   >
                     <Content
-                      tag={<p>SKILLS</p>}
-                      description={
-                        <p>Skills I have collected over the years and days.</p>
+                      tag={"SKILLS"}
+                      description={"Skills I have collected over the years and days."
                       }
                       content={
                         <div>
                           {Proficient?.length > 0 && (
                             <div className="pl-3">
-                              {/* <h2 className='text-xl'> Proficient </h2> */}
                               <div className="my-7 grid gap-5 grid-cols-3 md:grid-cols-6 content-center">
                                 {Proficient.map((x, index) => (
                                   <div
@@ -299,7 +302,7 @@ function App() {
                                     key={index}
                                   >
                                     {x.logo}
-                                    <div className="skill">{x.skill}</div>
+                                    <p className="small" style={{color: "white"}}>{x.skill}</p>
                                   </div>
                                 ))}
                               </div>
@@ -312,13 +315,11 @@ function App() {
                   <div
                     // data-aos="fade-right"
                     className="section last-section"
+                    style={{marginBottom: "20rem"}}
                   >
                     <Content
-                      tag={<p>CONTACT ME</p>}
-                      description={
-                        <p>
-                          Let's get in touch. I'd love to hear your thoughts !
-                        </p>
+                      tag={"CONTACT ME"}
+                      description={"Let's get in touch. I'd love to hear your thoughts !"
                       }
                       content={
                         <div>
@@ -373,19 +374,29 @@ function App() {
                                   href={`mailto: ngocthaipham99@gmail.com`}
                                   className="border-b-2 mt-3 inline-block border-gray-500"
                                 >
-                                  ngocthaipham99@gmail.com
+                                  <p>ngocthaipham99@gmail.com</p>
                                 </a>
                               </div>
-                              <a
-                                className="border-b-2 mt-3 inline-block border-gray-500"
-                                href="https://drive.google.com/file/d/10UiIv0XCqStCoWoXTU3PRQnPj0aqZ7p2/view?usp=sharing"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                Resume
-                              </a>
 
                               <div className="flex flex-row flex-wrap mt-7">
+                              <div className="mr-4">
+                                  <a
+                                    href={`https://drive.google.com/file/d/10UiIv0XCqStCoWoXTU3PRQnPj0aqZ7p2/view?usp=sharing`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
+                                      <img
+                                        src={Download}
+                                        alt=""
+                                        className="mr-1"
+                                      />
+                                      <p className="social">
+                                      Resume
+                                      </p>
+                                    </span>
+                                  </a>
+                                </div>
                                 <div className="mr-4">
                                   <a
                                     href={`https://www.facebook.com/marbiosgod/`}
@@ -396,11 +407,11 @@ function App() {
                                       <img
                                         src={Facebook}
                                         alt=""
-                                        width="24px"
-                                        height="24px"
                                         className="mr-1"
                                       />
+                                      <p className="social">
                                       Facebook
+                                      </p>
                                     </span>
                                   </a>
                                 </div>
@@ -415,11 +426,11 @@ function App() {
                                       <img
                                         src={Github}
                                         alt=""
-                                        width="24px"
-                                        height="24px"
                                         className="mr-1"
                                       />
+                                      <p className="social">
                                       GitHub
+                                      </p>
                                     </span>
                                   </a>
                                 </div>
@@ -433,11 +444,11 @@ function App() {
                                       <img
                                         src={Instagram}
                                         alt=""
-                                        width="24px"
-                                        height="24px"
                                         className="mr-1"
                                       />
+                                      <p className="social">
                                       Instagram
+                                      </p>
                                     </span>
                                   </a>
                                 </div>
@@ -447,7 +458,6 @@ function App() {
                               className="relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm flex-contact-item flex-contact-right"
                               onClick={() => window.scroll(0, 0)}
                             >
-                              {/* <source srcSet={rocket} type="image/png" /> */}
                               <img
                                 className="rocket"
                                 src={rocket}
@@ -464,7 +474,6 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
       </body>
     </>
   );

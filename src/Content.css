@@ -1,42 +1,31 @@
-h3 {
+/* h3 {
   letter-spacing: -0.005em;
   line-height: 1.1em;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
-  display: block;
-  font-size: 2.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  /* font-weight: bold; */
-}
+} */
 
 p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font-size: 3.4rem;
+  line-height: 1.4em;
+  letter-spacing: -0.005em;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #7c7c7c;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.tag {
 
-}
+
 .description {
   margin-left: 1rem;
   /* margin-bottom: 4rem; */
 }
-.tag  p{
-  font-size: 1.3rem;
-  letter-spacing: 0.14em;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 2rem;
-}
-.content p {
-    font-size: 2rem;
+
+/* .content p{
+    font-size: 1.5rem;
     line-height: 1.4em;
     letter-spacing: -.005em;
     font-weight: 300;
@@ -44,7 +33,7 @@ p {
     margin-bottom: 40px;
     color: #7c7c7c;
     font-family: 'Source Sans Pro',sans-serif;
-}
+} */
 .seperator-line {
     width: 4rem;
     height: .1rem;

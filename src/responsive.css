@@ -17,7 +17,7 @@
   }
   h3 {
     letter-spacing: -0.005em;
-    line-height: 1em;
+    line-height: 1.1em;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 250;
@@ -28,7 +28,6 @@
     margin-block-end: 0.8em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    /* font-weight: bold; */
   }
   .content p {
     font-size: 1.2rem;
@@ -96,7 +95,10 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
   .flex-container {
     display: flex;
     height: 100%;
