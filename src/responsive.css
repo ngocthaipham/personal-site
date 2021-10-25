@@ -2,6 +2,14 @@
   html {
     font-size: 8px;
   }
+  a p {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    color: white;
+  }
+  .items-center p.small {
+    font-size: 2.2rem;
+  }
   .my-16 {
     position: absolute;
     width: 30rem;
@@ -12,10 +20,35 @@
   h1 {
     font-size:4rem;
   }
+  .flex-contact {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .flex-contact-item {
+    width: 100%;
+  }
+  .mt-7 {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  
+  }
+  .mr-4 {
+    width: 50%;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 7px;
+  }
+  a p {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    color: white;
+  }
+  .items-center p.small {
+    font-size: 2.8rem;
   }
   #main {
     position: absolute;
@@ -82,6 +115,22 @@
     min-height: 90vh;
     
 }
+.resume .resume-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 5rem;
+  position: relative;
+  padding: 3.5rem 3rem;
+  background: #181818;
+  border-radius: 10px;
+}
 .section-container .section {
   padding-bottom: 7rem;
 }
@@ -94,6 +143,9 @@ ul li {
 @media (max-width: 500px) {
   html {
     font-size: 6px;
+  }
+  .items-center p.small {
+    font-size: 2.5rem;
   }
  
   .my-16 {
@@ -157,8 +209,24 @@ ul li {
 .section-container .section {
   padding-bottom: 5rem;
 }
+.resume .resume-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 5rem;
+  position: relative;
+  padding: 2.5rem 2.5rem;
+  background: #181818;
+  border-radius: 10px;
+}
 ul li {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 }
@@ -167,6 +235,9 @@ ul li {
 @media (max-width: 375px) {
   html {
     font-size: 5px;
+  }
+  .items-center p.small {
+    font-size: 2.5rem;
   }
   .my-16 {
     position: absolute;
@@ -222,8 +293,28 @@ ul li {
     min-height: 80vh;
     
 }
+
+.resume .resume-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 5rem;
+  position: relative;
+  padding: 2rem 2rem;
+  background: #181818;
+  border-radius: 10px;
+}
+.resume-item .small {
+  font-size: 2.7rem;
+}
 ul li {
-  margin-left: 0.5rem;
+  margin-left: 3rem;
 }
 .flex-contact {
   flex-wrap: wrap;
@@ -242,11 +333,11 @@ ul li {
 .mr-4 {
   width: 50%;
 }
-.social {
+/* .social {
   margin-top: 0rem;
   font-size: 2rem;
   
-}
+} */
 h1 {
   font-size:5.5rem;
 }

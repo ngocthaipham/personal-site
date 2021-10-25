@@ -87,6 +87,12 @@ p.small {
   letter-spacing: 0;
   font-weight: 400;
 }
+.resume-item .small {
+  font-size: 3rem;
+}
+.items-center p.small {
+  font-size: 3rem;
+}
 a,
 a:focus,
 a:hover {
@@ -217,7 +223,7 @@ _:-ms-fullscreen,
 }
 
 .section-container {
-  max-width: 70rem;
+  max-width: 80rem;
 }
 .section-container .section {
   position: relative;
@@ -319,6 +325,7 @@ _:-ms-fullscreen,
   /* display: flex; */
 }
 
+
 .w-16 {
   width: 6.4rem;
   height: 6.4rem;
@@ -360,9 +367,9 @@ _:-ms-fullscreen,
   margin-top: 0.75rem;
 }
 .mr-1 {
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
 }
 
 .inline-block {
@@ -401,6 +408,12 @@ shadow-lg {
 .justify-between {
   justify-content: space-between;
   border-radius: 10px;
+}
+ .justify-between label {
+   font-size : 2.5rem;
+ }
+ .justify-between button {
+  font-size : 2rem;
 }
 .bg-gray,
 .focus\:bg-gray:focus,
@@ -504,13 +517,13 @@ ul li {
   margin-left: 4rem;
 }
 a p {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 0rem;
   color: white;
 }
 .social {
   margin-top: 0rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .mr-4 {
   width: 50%;
