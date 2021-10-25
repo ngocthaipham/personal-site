@@ -488,7 +488,7 @@ function App() {
                           </div>
                           <div
                             className="relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm flex-contact-item flex-contact-right"
-                            onClick={() => window.scroll(0, 0)}
+                            onClick={() => {window.scrollTo(0, 0)}}
                           >
                             <img
                               className="rocket"

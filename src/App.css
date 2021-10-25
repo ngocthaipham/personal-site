@@ -88,7 +88,7 @@ p.small {
   font-weight: 400;
 }
 .resume-item .small {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .items-center p.small {
   font-size: 3rem;
@@ -223,7 +223,7 @@ _:-ms-fullscreen,
 }
 
 .section-container {
-  max-width: 80rem;
+  max-width: 90rem;
 }
 .section-container .section {
   position: relative;
@@ -367,8 +367,8 @@ _:-ms-fullscreen,
   margin-top: 0.75rem;
 }
 .mr-1 {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
   margin-right: 1rem;
 }
 
@@ -410,10 +410,10 @@ shadow-lg {
   border-radius: 10px;
 }
  .justify-between label {
-   font-size : 2.5rem;
+   font-size : 3.8rem;
  }
  .justify-between button {
-  font-size : 2rem;
+  font-size : 3.2rem;
 }
 .bg-gray,
 .focus\:bg-gray:focus,
@@ -523,7 +523,7 @@ a p {
 }
 .social {
   margin-top: 0rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .mr-4 {
   width: 50%;
@@ -536,4 +536,5 @@ a p {
 .font-bold {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
+  font-size: 4.5rem;
 }

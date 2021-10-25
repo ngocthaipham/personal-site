@@ -36,6 +36,7 @@
   h1 {
     font-size:4rem;
   }
+
   .flex-contact {
     flex-wrap: wrap;
     justify-content: center;
@@ -59,7 +60,7 @@
     font-size: 7px;
   }
   a p {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0rem;
     color: white;
   }
@@ -80,7 +81,7 @@
     height: 70rem;
     position: absolute;
     justify-content: start;
-
+    margin-top: 5rem;
   }
   .left-content .inner-content {
     position: relative;
@@ -120,15 +121,17 @@
   .right-content .inner-content {
     padding-top: 20vh;
     position: relative;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 0%;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .section-container {
     position: relative;
-    max-width: 90rem;
+    max-width: 100rem;
   }
   .section-container .section.height-100 {
-    min-height: 90vh;
+    min-height: 80vh;
     
 }
 .resume .resume-item {
@@ -211,12 +214,15 @@ ul li {
   .right-content .inner-content {
     padding-top: 20vh;
     position: relative;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 0%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
   }
   .section-container {
     position: relative;
-    max-width: 70rem;
+    max-width: 90rem;
   }
   .section-container .section.height-100 {
     min-height: 80vh;
@@ -298,12 +304,15 @@ ul li {
   .right-content .inner-content {
     padding-top: 20vh;
     position: relative;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
   }
   .section-container {
     position: relative;
-    max-width: 60rem;
+    max-width: 80rem;
   }
   .section-container .section.height-100 {
     min-height: 80vh;
