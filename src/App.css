@@ -148,7 +148,6 @@ textarea {
 
 .right-content {
   position: fixed;
-  height:100%;
   width: 100%;
   overflow: auto;
   height: 100%;
@@ -166,7 +165,7 @@ _:-ms-fullscreen,
 .left-content {
   position: fixed;
   height: 100%;
-  width: 50%;
+  /* width: 50%; */
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,9 +176,10 @@ _:-ms-fullscreen,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* z-index: 2; */
+  z-index: -2;
   -webkit-perspective: 38rem;
   perspective: 38rem; 
+  margin : auto;
 }
 .left-content .inner-content {
   position: relative;
@@ -212,6 +212,7 @@ _:-ms-fullscreen,
 .my-16 {
   position: absolute;
   width: 60rem;
+  margin: auto;
   /* z-index: 1; */
 }
 

@@ -19,6 +19,7 @@ function App() {
     <>
       <body>
         <div id="main">
+          <div className="right-content">
           <div className="left-content">
             <div className="inner-content">
               <div className="picture-box">
@@ -30,7 +31,6 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="right-content">
             <div className="inner-content">
               <div className="section-container">
                 <div
