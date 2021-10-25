@@ -196,7 +196,7 @@ function App() {
                               className="small m-b-1-5"
                               style={{ color: "white" }}
                             >
-                              Vuong Sau Petro :
+                              Vuong Sau Petrol :
                               <span
                                 className="resume-job-name"
                                 style={{ marginLeft: "10px" }}
