@@ -1,11 +1,9 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import bg from "./asserts/bg-effects.png";
 import Facebook from "./asserts/fb.png";
-import Instagram from "./asserts/ig.png";
+import LinkedIn from "./asserts/linkedin.png";
 import Github from "./asserts/github.svg";
-import Download from "./asserts/download.png";
 import rocket from "./asserts/rocket.png";
 import Content from "./Content";
 import Hero from "./Hero";
@@ -470,17 +468,17 @@ function App() {
                               </div>
                               <div className="mr-4">
                                 <a
-                                  href={`https://www.instagram.com/pnthaiiii_/`}
+                                  href={`https://www.linkedin.com/in/th%C3%A1i-ph%E1%BA%A1m-ng%E1%BB%8Dc-a30894224/`}
                                   target="_blank"
                                   rel="noreferrer"
                                 >
                                   <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
                                     <img
-                                      src={Instagram}
+                                      src={LinkedIn}
                                       alt=""
                                       className="mr-1"
                                     />
-                                    <p className="social">Instagram</p>
+                                    <p className="social">LinkedIn</p>
                                   </span>
                                 </a>
                               </div>
