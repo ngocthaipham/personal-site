@@ -390,16 +390,11 @@ function App() {
                             <div className="flex flex-row flex-wrap mt-7">
                               <div className="mr-4">
                                 <a
-                                  href={`https://drive.google.com/file/d/10UiIv0XCqStCoWoXTU3PRQnPj0aqZ7p2/view?usp=sharing`}
+                                  href={`https://drive.google.com/file/d/1JmDwpg-Mo1rY1gC1dgqK-vWUHq2D4150/view?usp=sharing`}
                                   target="_blank"
                                   rel="noreferrer"
                                 >
                                   <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
-                                    {/* <img
-                                        src={Download}
-                                        alt=""
-                                        className="mr-1"
-                                      /> */}
                                     <svg
                                       className="mr-1"
                                       xmlns="http://www.w3.org/2000/svg"
